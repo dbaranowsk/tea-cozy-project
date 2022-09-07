@@ -1,0 +1,157 @@
+/* universal styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+a {
+    color: seashell;
+}
+
+#mission, #featured, #location, .contact {
+    text-align: center;
+}
+
+/* navigation bar */
+
+#header {
+    position: fixed;
+    display: flex;
+    height: 69px;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+.logo {
+    height: 50px;
+    position: relative;
+    left: 10px;
+    display: inline-block;
+
+
+}
+
+.logo img {
+    height: 50px;
+}
+
+#navigation {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    height: 50px;
+    align-items: center;
+}
+
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* banner */
+
+#mission {
+    margin: 50px auto 0px auto;
+    height:700px;
+    width: 1200px;
+    background-image: url(./images/mission-background.jpeg);
+    display: flex;
+    align-items: center;
+}
+
+#mission .heading {
+    width: 1200px;
+}
+
+.heading h2 {
+    margin: 10px 0px;
+}
+
+.heading h4 {
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+/* tea of the month */
+
+#featured {
+    align-items: center;
+    width: 1000px;
+    margin: 20px auto;
+
+}
+
+#featured .heading {
+    margin: auto;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: space-around;
+    align-content: center;
+    align-items: space-around;
+    width: 1000px;
+    text-transform: capitalize;
+}
+
+#menu img {
+    height: 200px;
+    width: 300px;
+    display: block;
+    margin: 10px;
+}
+
+/* Locations */
+
+#location {
+    height: 500px;
+    background-image: url(./images/locations-background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 15px auto 0px auto;
+    justify-items: center;
+}
+
+#location h2 {
+    margin: 15px auto;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address h3 {
+    margin: -5px;
+    padding-top: 3px;
+}
+
+.loc {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: inline;
+    justify-items: center;
+    line-height: 3;
+    background-color: black;
+}
